@@ -19,7 +19,7 @@ If the application can do neither, it won't be possible to send VBAN messages wi
 ## "Installation"
 At the moment there is no insaller. You have to download the .zip from Releases, extract it and run the .exe inside.
 The .exe has to be run inside the folder with the other files.
-You might need to install the [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) (ASP .NET Core Runtime also works), if not already installed.
+If not already installed, you will be promtped to download the .NET 10 Desktop Runtime.
 
 ## How to use
 1. Insert your command(s) into the "Command" text box (don't use newlines for multiple commands, write them inline and seperated by ";")
