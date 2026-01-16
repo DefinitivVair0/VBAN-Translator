@@ -26,3 +26,14 @@ If not already installed, you will be promtped to download the .NET 10 Desktop R
 1. Select mode using the check box
 1. Insert your VBAN-TEXT name (when using pure ASCII mode this has to be exactly 16 characters long)
 1. Click "Translate" (this will copy the output into your clipboard)
+
+Note that you will see an error LED lighting up on the VBAN stream. This is because each time you send a command a counter will increase so that the receiver can check if there were any missing/duplicate packets. Since you would need to change the command every time this counter will allways be 0 in the translated command, causing the error. BUT the command still registers normally and does not get ignored.
+
+## Example
+The command `Strip[1].Mute = 1;` should be sent to VM/Matrix on the VBAN-TEXT Stream "Cool16CharStream"
+
+Since the header has to be embedded into the ASCII string you will get this output:
+
+VBANR\00\00\00Cool16CharStream\00\00\00\00Strip[1].Mute = 1; (Pure ASCII off)
+
+VBANR  Cool16CharStream    Strip[1].Mute = 1; (Pure ASCII on)
