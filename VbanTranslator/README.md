@@ -5,7 +5,7 @@ This app is designed to take in VBAN command(s) and translate it to ASCII while 
 
 This way every application that can send text over UDP can send VBAN commands.
 
-The only limitation is that some parts of the VBAN protocoll require bytes between 0x00 and 0x19, which don't translate to any alphanumeric character or other symbol in ASCII.
+The only limitation is that some parts of the VBAN protocoll require bytes between 0x00 and 0x1F, which don't translate to any alphanumeric character or other symbol in ASCII.
 This means that the sending application has to either:
 
 - be able to read and send non-standart characters (looks something like this: )
