@@ -1,1 +1,1 @@
-Readbe can be found in VbanTranslator/README.md
+Readme can be found in VbanTranslator/README.md
